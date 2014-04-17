@@ -7,6 +7,7 @@ gem 'jquery-rails'
 gem 'json','1.8.1'
 gem 'unicorn'
 gem "unicorn-rails"
+gem 'newrelic_rpm'
 
 group :assets do
   gem 'uglifier'
