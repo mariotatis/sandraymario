@@ -13,3 +13,44 @@
 //= require jquery
 //= require jquery_ujs
 //= require_tree .
+
+//= require libraries-ck
+//= require modernizr
+//= require save_the_date
+
+(function(doc) {
+
+	var addEvent = 'addEventListener',
+	type = 'gesturestart',
+	qsa = 'querySelectorAll',
+	scales = [1, 1],
+	meta = qsa in doc ? doc[qsa]('meta[name=viewport]') : [];
+
+	function fix() {
+		meta.content = 'width=device-width,minimum-scale=' + scales[0] + ',maximum-scale=' + scales[1];
+		doc.removeEventListener(type, fix, true);
+	}
+
+	if ((meta = meta[meta.length - 1]) && addEvent in doc) {
+		fix();
+		scales = [.25, 1.6];
+		doc[addEvent](type, fix, true);
+	}
+
+}(document));
+
+$(document).ready(function() {
+	// init Save the Date
+	save_the_date.init({
+		weddingDate: "2014/06/14, 03:00", 
+		//Date : enter your wedding date
+		labels: ["días", "horas", "minutos", "segundos"], 
+		//Array of strings : labels of time units
+		sendServerMessages: ["Thank you.", "Sorry, your message could not be sent due to an error."],
+		//Array of strings : Messages from the server on send
+		gallery : ["assets/gallery/gallery1.jpg", "assets/gallery/gallery2.jpg", "assets/gallery/gallery3.jpg", "assets/gallery/gallery4.jpg", "assets/gallery/gallery5.jpg", "assets/gallery/gallery6.jpg"],
+		//Array image pathes
+		titles : ['Just us', 'Reception', 'Flowers we chose', 'In the eyes'],
+		//Array of strings : corresponding titles
+	});	
+});

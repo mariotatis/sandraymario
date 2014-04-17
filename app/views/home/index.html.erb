@@ -1,4 +1,171 @@
-<h1>Sandra y Mayo</h1>
-<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Morbi commodo, ipsum sed pharetra gravida, orci magna rhoncus neque, id pulvinar odio lorem non turpis. Nullam sit amet enim. Suspendisse id velit vitae ligula volutpat condimentum. Aliquam erat volutpat. Sed quis velit. Nulla facilisi. Nulla libero. Vivamus pharetra posuere sapien. Nam consectetuer. Sed aliquam, nunc eget euismod ullamcorper, lectus nunc ullamcorper orci, fermentum bibendum enim nibh eget ipsum. Donec porttitor ligula eu dolor. Maecenas vitae nulla consequat libero cursus venenatis.
+<div class="nav-container">
+	<div class="nav">
+		<a  id="full-menu" href="#">&equiv;</a>
+		<a class="active to-scroll" href="#top">Inicio</a>
+		<a class="to-scroll" href="#about">Nosotros</a>
+		<a class="to-scroll" href="#ceremony">Ceremonia</a>
+		<a class="to-scroll" href="#registry">Registry</a>
+		<a href="#" id="gallery">Galeria</a>
+		<a class="to-scroll" href="#rsvp">R.S.V.P.</a>
+		<div class="effect"></div>
+	</div>
+</div>
 
-</p>
+
+<!-- HEADER STARTS -->
+<header class="header" role="banner">
+	<h1 class="wrapper"><span>Sandra</span> & <span>Mario</span></h1>
+	<div class="images"><span class="her pile"></span><span class="him pile"></span></div> 
+	<h2>
+		<span class="event">nos casamos...</span>
+		<span class="date">Junio 14, 2014</span>
+		<span id="timer" class="timer"></span>
+	</h2>		
+</header>	
+<!-- HEADER ENDS -->
+
+<!--- MAIN CONTENT STARTS -->
+<div class="content">
+
+	<!-- ABOUT SECTION STARTS -->
+	<section id="about" class="about clearfix">
+		<div class="she">
+			<p>
+				<strong>Sandra Pacheco</strong> sed posuere consectetur est at lobortis. Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+			</p>
+		</div>
+		<div class="he">
+			<p>
+				<strong>Mario Tatis</strong> sed posuere consectetur est at lobortis. Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+			</p>
+		</div>
+		<div class="they">
+			<p>
+				<strong>Nosotros</strong> sed posuere consectetur est at lobortis. Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+			</p>
+			<p>Nulla vitae elit libero, a pharetra augue. Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
+			</p>
+		</div>
+	</section>
+	<!-- ABOUT SECTION ENDS -->
+
+
+	<!-- CEREMONY SECTION STARTS -->
+	<section  id="ceremony" class="flex-container ceremony">
+
+		<div class="flexslider">
+			<ul class="slides">
+				<li style="background-image: url(assets/slide0.jpg);"></li>
+				<li style="background-image: url(assets/slide1.jpg);"></li>
+				<li class="fixed" style="background-image: url(assets/slide2.jpg);"></li>
+			</ul>
+		</div>
+
+		<div  class="wrapper clearfix">
+
+			<h2 class="title">06.14.2014</h2>
+			<div class="ceremony-1">
+				<span class="image pile">
+					<img src="assets/church.jpg" width="300" height="300" alt="Church">
+				</span>
+				<h3>Ceremonia</h3>
+				<p>3:00 PM</p>
+				<p>Parroquia Espíritu Santo, Barranquilla</p>
+				<a class="map" data-lat="11.0147358" data-lng="-74.8224075" data-title="Ceremonia">Ver en Google Maps</a>
+				<div class="pile my_map"><div id="map-ceremony"></div></div>		
+			</div>
+			<div class="ceremony-2">
+				<span class="image pile">
+					<img src="assets/reception.jpg" width="300" height="300" alt="Reception">
+				</span>
+				<h3>Recepción</h3>
+				<p>5:00 PM</p>
+				<p>Altos de Pradomar, Salgar </p>
+				<a class="map" data-lat="11.015509" data-lng="-74.941874" data-title="Recepción" >Show in Google Maps</a>	
+				<div class="pile my_map"><div id="map-reception"></div></div>		
+			</div>
+
+		</div>
+	</section>
+	<!-- CEREMONY SECTION ENDS -->
+
+	<!--- REGISTRY STARTS -->	
+	<section id="registry" class="registry">
+		<div class="wrapper">
+			<h2 class="title">Lista de Regalos</h2>
+			<h3>Lluvia de sobres</h3>
+			<p>Tu presencia es suficiente, pero si sientes una gran generosidad en la recepción habra una baúl esperando por tu sobre</p>
+				<ul>
+					<li><a href="#"><img src="assets/registry/macys.png" width="228" height="43" alt="Macys"></a></li>
+					<li><a href="#"><img src="assets/registry/tiffany.png" width="228" height="43" alt="Tiffany"></a></li>
+					<li><a href="#"><img src="assets/registry/cratebarrel.png" width="228" height="43" alt="Cratebarrel"></a></li>
+				</ul>
+			</div>
+		</section>
+		<!--- REGISTRY ENDS -->
+
+		<!--- RSVP STARTS -->
+		<section id="rsvp" class="contact">
+			<h2 class="title">R.S.V.P.</h2>
+			<div class="wrapper">
+
+				<div id="note">
+					<p>Nos encantaría celebrar nuestra boda contigo.</p> 
+					<p>Por favor respondenos antes de Junio 5, 2014.</p>
+				</div>
+
+					<h3 class='title_info'>Nos acompañarás a nuestra boda?</h3>
+
+				<form action="#" method="post">
+
+					<fieldset>
+						<h3>Tu información personal:</h3>
+						<input type="text" id="name" name="name" placeholder="Tu Nombre*">
+						<input type="email" id="email" name="email" placeholder="Tu E-mail*">
+					</fieldset>
+						
+						<fieldset id="guestss">
+							<h3>Detalles de tu acompañante <span style='font-size:28px'>(si lo hay)</span>:</h3>
+							<input type="text"  id="adults" name="adults" placeholder="Nombre de tu acompañante*">
+							<input type="text"  id="children" name="children" placeholder="Número de niños">
+						</fieldset>	
+					
+					</fieldset>
+						<h3>Firma nuestro libro de visitas</h3>
+						<textarea name="message" class="form-message" id="message" placeholder="Te gustaría dejarnos un par de lineas?"></textarea>
+					</fieldset>
+
+					<input type="submit" class="submit" id="send" value="Confirmar">
+
+				</form>
+
+				<h3>o Contáctanos directamente:</h3>
+				<div class="contact-details contact-details-1">
+					<h4>Sandra</h4>
+					<p>+57 300 804-0274</p>
+					<p>
+						<a href="mailto:sandrapachecoandrade@gmail.com?subject=RSVP">sandrapachecoandrade@gmail.com</a>
+					</p>
+				</div>
+				<div class="contact-details contact-details-2">
+					<h4>Mario</h4>
+					<p>+57 300 374-9430</p>
+					<p>
+						<a href="mailto:mariomtatis@gmail.com?subject=RSVP">mariomtatis@gmail.com</a>
+					</p>
+				</div>
+
+			</div>
+
+		</section>
+		<!--- RSVP ENDS -->
+
+		<!-- FOOTER STARTS -->
+		<footer id="footer">	
+			<p class="copyright"> &copy; 2014 <a href="#">SandrayMayo.</a> Todos los derechos reservados.</p>
+		</footer>
+		<!-- FOOTER ENDS -->
+
+	</div>	
+	<!--- MAIN CONTENT ENDS -->
+
