@@ -8,6 +8,8 @@
  * version 1.0 release date: 24.03.2013
  *
  **/
+var intervalListener;
+
 var save_the_date = {
     //-------------DEFAULT SETTINGS------------//
     defaults: {
@@ -167,13 +169,16 @@ var save_the_date = {
 
         $(document).on("click", "#gallery", function () {
             var my_gallery = [];
-            $(self.option.gallery).each(function (index, ele) {
+            $(self.option.gallery).sort(function() {return 0.5 - Math.random()}).each(function (index, ele) {
                 my_gallery[index] = {
                     href: ele,
                     title: self.option.titles[index]
                 };
             });
             $.fancybox.open(my_gallery);
+			window.clearInterval(intervalListener);
+			intervalListener = setInterval(function() {$('.fancybox-next').trigger('click');}, 3000);			
+
             $(".active").removeClass("active");
             $("#gallery").addClass("active");
             return false;
@@ -202,6 +207,8 @@ var save_the_date = {
                 };
             });
             $.fancybox.open(my_gallery);
+			window.clearInterval(intervalListener);
+			intervalListener = setInterval(function() {$('.fancybox-next').trigger('click');}, 3000);
             $(".active").removeClass("active");
             $("#gallery").addClass("active");
             return false;
