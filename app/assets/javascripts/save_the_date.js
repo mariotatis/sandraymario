@@ -19,8 +19,10 @@ var save_the_date = {
         //Array of strings : Messages from the server
         gallery: [],
         //FancyBox gallery images, ex ["gallery/image1.jpg", "gallery/image2.jpg", "gallery/image3.jpg"]
-        titles: []
+        titles: [],
         //FancyBox gallery titles (optional) : ['Just us', 'Reception', 'Flowers we chose', 'In the eyes'],
+		guayabera: [],
+		mujeres: []
     },
     option: {},
     init: function (customOption) {
@@ -169,6 +171,34 @@ var save_the_date = {
                 my_gallery[index] = {
                     href: ele,
                     title: self.option.titles[index]
+                };
+            });
+            $.fancybox.open(my_gallery);
+            $(".active").removeClass("active");
+            $("#gallery").addClass("active");
+            return false;
+        });
+
+		$(document).on("click", "#guayabera", function () {
+            var my_gallery = [];
+            $(self.option.guayabera).each(function (index, ele) {
+                my_gallery[index] = {
+                    href: ele,
+                    title: 'Conjunto Guayabera Blanca'
+                };
+            });
+            $.fancybox.open(my_gallery);
+            $(".active").removeClass("active");
+            $("#gallery").addClass("active");
+            return false;
+        });
+
+		$(document).on("click", "#mujeres", function () {
+            var my_gallery = [];
+            $(self.option.mujeres).each(function (index, ele) {
+                my_gallery[index] = {
+                    href: ele,
+                    title: 'Vestido Tropical'
                 };
             });
             $.fancybox.open(my_gallery);

@@ -52,5 +52,7 @@ $(document).ready(function() {
 		//Array image pathes
 		titles : ['Just us', 'Reception', 'Flowers we chose', 'In the eyes'],
 		//Array of strings : corresponding titles
+		guayabera : ["assets/guayabera/guayabera1.jpg"],
+		mujeres : ["assets/mujeres/mujeres1.png", "assets/mujeres/mujeres2.png", "assets/mujeres/mujeres3.png"]		
 	});	
 });

@@ -1,10 +1,10 @@
 <div class="nav-container">
 	<div class="nav">
-		<a  id="full-menu" href="#">&equiv;</a>
+		<a id="full-menu" href="#">≡</a>
 		<a class="active to-scroll" href="#top">Inicio</a>
 		<a class="to-scroll" href="#about">Nosotros</a>
 		<a class="to-scroll" href="#ceremony">Ceremonia</a>
-		<a class="to-scroll" href="#registry">Registry</a>
+		<a class="to-scroll" href="#registry">Etiqueta</a>
 		<a href="#" id="gallery">Galeria</a>
 		<a class="to-scroll" href="#rsvp">R.S.V.P.</a>
 		<div class="effect"></div>
@@ -13,13 +13,13 @@
 
 
 <!-- HEADER STARTS -->
-<header class="header" role="banner">
-	<h1 class="wrapper"><span>Sandra</span> & <span>Mario</span></h1>
+<header class="header wide-short" role="banner">
+	<h1 class="wrapper"><span>Sandra</span> &amp; <span>Mario</span></h1>
 	<div class="images"><span class="her pile"></span><span class="him pile"></span></div> 
-	<h2>
-		<span class="event">nos casamos...</span>
+	<h2 style="opacity: 1;">
+		<span class="event">Nos Casamos...</span>
 		<span class="date">Junio 14, 2014</span>
-		<span id="timer" class="timer"></span>
+		<span id="timer" class="timer">en <span id="days">57</span> días  <span id="hours">4</span> horas  <span id="minutes">37</span> minutos  <small><span id="seconds">40</span> segundos</small></span>
 	</h2>		
 </header>	
 <!-- HEADER ENDS -->
@@ -31,17 +31,20 @@
 	<section id="about" class="about clearfix">
 		<div class="she">
 			<p>
-				<strong>Sandra Pacheco</strong> sed posuere consectetur est at lobortis. Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+				<strong>Sandra Pacheco</strong><br/>Cuando conocí a Mayo lo que más me gustó de él fue su gran sentido del humor, hicimos empatía desde el principio, nos divertíamos riendonos de cualquier cosa, disfrutando la vida y viviendo cada instante juntos. 
+				</p>
+				<p>
+				Hoy es el hombre de mi vida, con quien acompañaré cada una de mis metas. Estoy dichosa y feliz de tenerlo a mi lado y de que día a día me siga encantando y enamorando tanto. Gracias por todo amor!!
 			</p>
 		</div>
 		<div class="he">
 			<p>
-				<strong>Mario Tatis</strong> sed posuere consectetur est at lobortis. Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+				<strong>Mario Tatis</strong><br/>sed posuere consectetur est at lobortis. Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
 			</p>
 		</div>
 		<div class="they">
 			<p>
-				<strong>Nosotros</strong> sed posuere consectetur est at lobortis. Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
+				<strong>Nosotros</strong><br/>sed posuere consectetur est at lobortis. Donec id elit non mi porta gravida at eget metus. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
 			</p>
 			<p>Nulla vitae elit libero, a pharetra augue. Maecenas faucibus mollis interdum. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Aenean lacinia bibendum nulla sed consectetur. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum.
 			</p>
@@ -51,19 +54,19 @@
 
 
 	<!-- CEREMONY SECTION STARTS -->
-	<section  id="ceremony" class="flex-container ceremony">
+	<section id="ceremony" class="flex-container ceremony">
 
 		<div class="flexslider">
 			<ul class="slides">
-				<li style="background-image: url(assets/slide0.jpg);"></li>
-				<li style="background-image: url(assets/slide1.jpg);"></li>
-				<li class="fixed" style="background-image: url(assets/slide2.jpg);"></li>
+				<li style="background-image: url(http://www.sandraymario.com/assets/slide0.jpg); width: 100%; float: left; margin-right: -100%; position: relative; display: none;" class=""></li>
+				<li style="background-image: url(http://www.sandraymario.com/assets/slide1.jpg); width: 100%; float: left; margin-right: -100%; position: relative; display: list-item;" class="flex-active-slide"></li>
+				<li class="fixed" style="background-image: url(http://www.sandraymario.com/assets/slide2.jpg); width: 100%; float: left; margin-right: -100%; position: relative; display: none;"></li>
 			</ul>
-		</div>
+		<ul class="flex-direction-nav"><li><a class="flex-prev" href="#">‹</a></li><li><a class="flex-next" href="#">›</a></li></ul></div>
 
-		<div  class="wrapper clearfix">
+		<div class="wrapper clearfix">
 
-			<h2 class="title">06.14.2014</h2>
+			<h2 class="title">14.06.2014</h2>
 			<div class="ceremony-1">
 				<span class="image pile">
 					<img src="assets/church.jpg" width="300" height="300" alt="Church">
@@ -81,7 +84,7 @@
 				<h3>Recepción</h3>
 				<p>5:00 PM</p>
 				<p>Altos de Pradomar, Salgar </p>
-				<a class="map" data-lat="11.015509" data-lng="-74.941874" data-title="Recepción" >Show in Google Maps</a>	
+				<a class="map" data-lat="11.015509" data-lng="-74.941874" data-title="Recepción">Ver en Google Maps</a>	
 				<div class="pile my_map"><div id="map-reception"></div></div>		
 			</div>
 
@@ -92,14 +95,12 @@
 	<!--- REGISTRY STARTS -->	
 	<section id="registry" class="registry">
 		<div class="wrapper">
-			<h2 class="title">Lista de Regalos</h2>
-			<h3>Lluvia de sobres</h3>
-			<p>Tu presencia es suficiente, pero si sientes una gran generosidad en la recepción habra una baúl esperando por tu sobre</p>
-				<ul>
-					<li><a href="#"><img src="assets/registry/macys.png" width="228" height="43" alt="Macys"></a></li>
-					<li><a href="#"><img src="assets/registry/tiffany.png" width="228" height="43" alt="Tiffany"></a></li>
-					<li><a href="#"><img src="assets/registry/cratebarrel.png" width="228" height="43" alt="Cratebarrel"></a></li>
-				</ul>
+			<h2 class="title">Etiqueta</h2>
+			<h3>Sugerencias sobre como debes ir vestido (a):</h3>
+			<ul>
+					<li><a href="#" id="guayabera">HOMBRES:<br>Conjunto de Guayabera Blanca</a></li>
+					<li><a href="#" id="mujeres">MUJERES:<br>Vestido Tropical</a></li>
+			</ul>
 			</div>
 		</section>
 		<!--- REGISTRY ENDS -->
@@ -110,11 +111,14 @@
 			<div class="wrapper">
 
 				<div id="note">
-					<p>Nos encantaría celebrar nuestra boda contigo.</p> 
-					<p>Por favor respondenos antes de Junio 5, 2014.</p>
+					<p>Nos encantaría celebrar contigo este día tan importante para nosotros.</p> 
+					<p>Por favor confirma tu asistencia antes del 5 de Junio.</p>
 				</div>
-
-					<h3 class='title_info'>Nos acompañarás a nuestra boda?</h3>
+				<h3>Lluvia de sobres</h3>
+				<p>Tu presencia es suficiente...</p>
+				<p>Pero, si sientes una gran generosidad por nosotros, en la recepción habra un baúl esperando por tu sobre<br>jejeje Muchisimas gracias por tu compañía.</p>
+				
+				<h3 class="title_info">Por favor, confirmanos sí nos acompañarás en la celebración de nuestra boda?</h3>
 
 				<form action="#" method="post">
 
@@ -125,15 +129,15 @@
 					</fieldset>
 						
 						<fieldset id="guestss">
-							<h3>Detalles de tu acompañante <span style='font-size:28px'>(si lo hay)</span>:</h3>
-							<input type="text"  id="adults" name="adults" placeholder="Nombre de tu acompañante*">
-							<input type="text"  id="children" name="children" placeholder="Número de niños">
+							<h3>Detalles de tu acompañante <span style="font-size:28px">(si lo hay)</span>:</h3>
+							<input type="text" id="adults" name="adults" placeholder="Nombre de tu acompañante*">
+							<input type="text" id="children" name="children" placeholder="Número de niños">
 						</fieldset>	
 					
-					</fieldset>
+					
 						<h3>Firma nuestro libro de visitas</h3>
 						<textarea name="message" class="form-message" id="message" placeholder="Te gustaría dejarnos un par de lineas?"></textarea>
-					</fieldset>
+					
 
 					<input type="submit" class="submit" id="send" value="Confirmar">
 
@@ -162,10 +166,9 @@
 
 		<!-- FOOTER STARTS -->
 		<footer id="footer">	
-			<p class="copyright"> &copy; 2014 <a href="#">SandrayMayo.</a> Todos los derechos reservados.</p>
+			<p class="copyright"> © 2014 <a href="#">SandrayMayo.</a> Todos los derechos reservados.</p>
 		</footer>
 		<!-- FOOTER ENDS -->
 
 	</div>	
 	<!--- MAIN CONTENT ENDS -->
-
