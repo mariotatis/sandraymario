@@ -4,15 +4,7 @@ class ReservationsController < ApplicationController
     @reservation = Reservation.new(reservation_params)
 
     respond_to do |format|
-      if @reservation.save
-        
-        Mail.deliver do
-          to 'mario@koombea.com'
-          from 'no-reply@sandraymario.com'
-          subject 'testing send mail'
-          body 'Sending email with Ruby through SendGrid!'
-        end
-                
+      if @reservation.save        
         format.html { redirect_to root_path, notice: 'User was successfully created.' }
         format.js   { render :action => "success"}
       else
