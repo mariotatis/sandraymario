@@ -48,9 +48,31 @@ $(document).ready(function() {
 		//Array of strings : labels of time units
 		sendServerMessages: ["Thank you.", "Sorry, your message could not be sent due to an error."],
 		//Array of strings : Messages from the server on send
-		gallery : ["assets/gallery/gallery1.jpg", "assets/gallery/gallery2.jpg", "assets/gallery/gallery3.jpg", "assets/gallery/gallery4.jpg", "assets/gallery/gallery5.jpg", "assets/gallery/gallery6.jpg"],
+		gallery : [
+		"assets/gallery/gallery1.jpg",
+		"assets/gallery/gallery2.jpg",
+		"assets/gallery/gallery3.jpg",
+		"assets/gallery/gallery4.jpg",
+		"assets/gallery/gallery5.jpg",
+		"assets/gallery/gallery6.jpg",
+		"assets/gallery/gallery7.jpg",
+		"assets/gallery/gallery8.jpg",
+		"assets/gallery/gallery9.jpg",
+		"assets/gallery/gallery10.jpg",
+		"assets/gallery/gallery11.jpg",
+		"assets/gallery/gallery12.jpg",
+		"assets/gallery/gallery13.jpg",
+		"assets/gallery/gallery14.jpg",
+		"assets/gallery/gallery15.jpg",
+		"assets/gallery/gallery16.jpg",
+		"assets/gallery/gallery17.jpg",
+		"assets/gallery/gallery18.jpg",
+		"assets/gallery/gallery19.jpg",
+		"assets/gallery/gallery20.jpg",
+		"assets/gallery/gallery21.jpg"
+		],
 		//Array image pathes
-		titles : ['Just us', 'Reception', 'Flowers we chose', 'In the eyes'],
+		titles : [],
 		//Array of strings : corresponding titles
 		guayabera : ["assets/guayabera/guayabera1.jpg"],
 		mujeres : ["assets/mujeres/mujeres1.png", "assets/mujeres/mujeres2.png", "assets/mujeres/mujeres3.png"]		
