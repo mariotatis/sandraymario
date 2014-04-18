@@ -8,6 +8,7 @@ gem 'json','1.8.1'
 gem 'unicorn'
 gem "unicorn-rails"
 gem 'newrelic_rpm'
+gem 'rails_12factor'
 
 group :assets do
   gem 'uglifier'
