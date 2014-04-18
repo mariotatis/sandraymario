@@ -5,6 +5,10 @@ class ReservationsController < ApplicationController
 
     respond_to do |format|
       if @reservation.save
+        mail(:from => "no-reply@sandraymario.com", 
+                :to => "mario@koombea.com", 
+                :subject => "Test email").deliver!
+                
         format.html { redirect_to root_path, notice: 'User was successfully created.' }
         format.js   { render :action => "success"}
       else
