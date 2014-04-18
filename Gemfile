@@ -10,7 +10,7 @@ gem 'json','1.8.1'
 gem 'unicorn'
 gem "unicorn-rails"
 gem 'newrelic_rpm'
-gem 'rails_12factor'
+#gem 'rails_12factor'
 
 gem 'activeadmin', github: 'gregbell/active_admin'
 gem 'polyamorous', github: 'activerecord-hackery/polyamorous'
