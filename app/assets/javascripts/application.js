@@ -18,6 +18,7 @@
 //= require modernizr
 //= require save_the_date
 
+
 (function(doc) {
 
 	var addEvent = 'addEventListener',
@@ -41,6 +42,11 @@
 
 $(document).ready(function() {
 	// init Save the Date
+	
+	$("#button_submit_form" ).click(function() {
+	   $('#button_submit_form').attr('disabled', true);
+	   $('form').submit();
+	});
 	
 	document.addEventListener("touchmove", ScrollStart, false);
 	document.addEventListener("scroll", Scroll, false);

@@ -435,7 +435,7 @@ input[type="text"], input[type="email"], textarea {
 textarea {
   height: 150px; }
 
-input[type='submit'] {
+input[type='submit'], #button_submit_form {
   padding: 6px 1em 4px;
   color: white;
   font-family: "BenchNine", "Arial Narrow", sans-serif;
@@ -443,9 +443,13 @@ input[type='submit'] {
   text-transform: uppercase;
   font-size: 1.25em;
   border: none;
+  margin-top:20px;
+  background:#7e3836;
   border-radius: 6px; }
-  input[type='submit']:hover {
+  input[type='submit']:hover, #button_submit_form:hover{
     background: #393939; }
+  input[type='submit']:disabled, #button_submit_form:disabled{
+    background: #777; }
 
 #guests {
   display: none; }
