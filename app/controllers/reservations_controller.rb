@@ -5,9 +5,13 @@ class ReservationsController < ApplicationController
 
     respond_to do |format|
       if @reservation.save
-        mail(:from => "no-reply@sandraymario.com", 
-                :to => "mario@koombea.com", 
-                :subject => "Test email").deliver!
+        
+        Mail.deliver do
+          to 'mario@koombea.com'
+          from 'no-reply@sandraymario.com'
+          subject 'testing send mail'
+          body 'Sending email with Ruby through SendGrid!'
+        end
                 
         format.html { redirect_to root_path, notice: 'User was successfully created.' }
         format.js   { render :action => "success"}
