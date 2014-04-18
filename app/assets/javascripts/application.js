@@ -42,6 +42,24 @@
 $(document).ready(function() {
 	// init Save the Date
 	
+	document.addEventListener("touchmove", ScrollStart, false);
+	document.addEventListener("scroll", Scroll, false);
+
+	function ScrollStart() {
+	    //start of scroll event for iOS
+		if(typeof window.orientation !== 'undefined'){
+			$(".her").css('background-position', 'bottom left');
+			$(".him").css('background-position', 'bottom right');
+		}
+	}
+
+	function Scroll() {
+		if(typeof window.orientation !== 'undefined'){
+	    	$(".her").css('background-position', 'top left');
+			$(".him").css('background-position', 'top right');
+		}
+	}
+	
 	var arr = [];
 	for (var i = 1; i < 73; i++) {
 	    arr.push("assets/gallery/gallery"+i+".jpg");
