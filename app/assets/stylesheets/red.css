@@ -505,17 +505,44 @@ input[type='submit'] {
 .registry + .contact {
   margin-top: 0; }
 
+
+
+/*-----------------------------------------------------------------*/
+/*------------------------- 	MAYO    ---------------------------*/
+/*-----------------------------------------------------------------*/
+
 .check_fix{
 	width:73% !important;
 }
 
+.success_box_{
+	color:#789e1e;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.error_box_{
+	color:red;
+}
+
+.infor_box{
+	list-style: none;
+	background: #fff;
+	padding: 1em;
+	border-radius: 10px;
+	box-shadow: 0 0 2px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.05);
+}
 
 .title_info{
-font-family: "BenchNine", "Arial Narrow", sans-serif;
-font-weight: 700;
-text-transform: uppercase;
-font-size: 2.4em;
-text-align: center;
+	font-family: "BenchNine", "Arial Narrow", sans-serif;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 2.4em;
+	text-align: center;
+}
+
+.title_info_fix{
+	font-size:1.7em !important
 }
 
 .frase{
@@ -706,6 +733,10 @@ footer {
     float: left;
     width: 48%;
     margin: 0 1% 10px; }
+
+  input[type="text"]{
+	 text-transform:capitalize;}
+
 
   .checkbox {
     text-align: left; }

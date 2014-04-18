@@ -124,25 +124,32 @@
 				<p>Tu presencia es suficiente...</p>
 				<p>Pero, si sientes una gran generosidad por nosotros, en la recepción habra un baúl esperando por tu sobre.<br>Muchisimas gracias por tu compañía.</p>
 				
-				<h3 class="title_info" style='font-size:2em !important'>Por favor, confirmanos sí nos acompañarás en la celebración de nuestra boda?</h3>
+				
+				<div id='confirmar_supo'>
 
-				<form action="#" method="post">
+					<h3 class="title_info title_info_fix">Por favor, confirmanos sí nos acompañarás en la celebración de nuestra boda?</h3>
+
+					<%= form_for(@reservation, remote: true) do |f| %>
 
 					<fieldset>
 						<h3>Tu información personal:</h3>
-						<input type="text" id="name" name="name" placeholder="Tu Nombre*">
-						<input type="email" id="email" name="email" placeholder="Tu E-mail*">
+						<%= f.text_field :name, :placeholder=>"Nombre Completo*" %>
+						<%= f.text_field :email, :type=> 'email', :placeholder=>"E-mail*" %>
+						<%= f.text_field :phone, :placeholder=>"Teléfono*" %>
 					</fieldset>
-						
-						<fieldset id="guestss">
-							<h3>Detalles de tu acompañante <span style="font-size:28px">(si lo hay)</span>:</h3>
-							<input type="text" id="adults" name="adults" placeholder="Nombre de tu acompañante*">
-							<input type="text" id="children" name="children" placeholder="Número de niños">
-						</fieldset>						
 
-					<input type="submit" class="submit" id="send" value="Confirmar">
+					<fieldset id="guestss">
+						<h3>Detalles de tu acompañante <span style="font-size:28px">(si lo hay)</span>:</h3>
+						<%= f.text_field :companion, :placeholder=>"Nombre de tu acompañante*" %>
+						<%= f.text_field :kids, :placeholder=>"Número de niños" %>
+					</fieldset>
+					
+					<%= f.submit "Confirmar" %>
+					
+					<% end %>
 
-				</form>
+				</div>
+	
 
 				<h3>o Contáctanos directamente:</h3>
 				<div class="contact-details contact-details-1">
