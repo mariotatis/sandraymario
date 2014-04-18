@@ -3,7 +3,7 @@ class UserMailer < ActionMailer::Base
   
   def welcome_email(registration)
       @registration = registration
-      mail(to: @registration.email, subject: 'Welcome to My Awesome Site')
+      mail(to: @registration.email, subject: 'Matri Sandra & Mario')
     end
   
 end
