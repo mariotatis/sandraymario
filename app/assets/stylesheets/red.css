@@ -515,6 +515,12 @@ input[type='submit'], #button_submit_form {
 /*------------------------- 	MAYO    ---------------------------*/
 /*-----------------------------------------------------------------*/
 
+.sin_acompañante{
+	position: relative;
+	top: -11px;
+	font-size: 18px;
+}
+
 .check_fix{
 	width:73% !important;
 }
