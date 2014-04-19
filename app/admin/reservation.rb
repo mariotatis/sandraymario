@@ -21,12 +21,24 @@ ActiveAdmin.register Reservation do
   index do
       column :name
       column :email
-      column :companion
       column :phone
+      column :companion
       column :kids
       column :created_at
       
       default_actions
+  end
+  
+  show do |ad|
+    attributes_table do
+      row :name
+      row :email
+      row :phone
+      row :companion
+      row :row
+      row :created_at
+      row :updated_at
+    end
   end
   
 end
