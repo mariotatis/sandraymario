@@ -515,6 +515,10 @@ input[type='submit'], #button_submit_form {
 /*------------------------- 	MAYO    ---------------------------*/
 /*-----------------------------------------------------------------*/
 
+.color_span{
+	color:#f88484
+}
+
 .sin_acompañante{
 	position: relative;
 	top: -11px;
