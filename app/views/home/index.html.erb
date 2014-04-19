@@ -87,6 +87,7 @@
 				<h3>Ceremonia</h3>
 				<p>3:00 PM</p>
 				<p>Parroquia Espíritu Santo, Barranquilla</p>
+				<p>Carrera 96 cra 56 esquina</p>
 				<a class="map" data-lat="11.0147358" data-lng="-74.8224075" data-title="Ceremonia">Ver en Google Maps</a>
 				<div class="pile my_map"><div id="map-ceremony"></div></div>		
 			</div>
@@ -97,6 +98,7 @@
 				<h3>Recepción</h3>
 				<p>5:00 PM</p>
 				<p>Altos de Pradomar, Salgar </p>
+				<p>Calle 3 no. 33-381</p>
 				<a class="map" data-lat="11.015509" data-lng="-74.941874" data-title="Recepción">Ver en Google Maps</a>	
 				<div class="pile my_map"><div id="map-reception"></div></div>		
 			</div>
@@ -109,7 +111,7 @@
 	<section id="registry" class="registry">
 		<div class="wrapper">
 			<h2 class="title">Etiqueta</h2>
-			<h3>Sugerencias sobre como debes ir vestido (a):</h3>
+			<h3>Sugerencias sobre como debes vestirte:</h3>
 			<ul>
 					<li>HOMBRES:<br><a href="#" id="guayabera">Conjunto de Guayabera Blanca</a></li>
 					<li>MUJERES:<br><a href="#" id="mujeres">Vestido Tropical</a></li>
@@ -146,8 +148,9 @@
 					</fieldset>
 
 					<fieldset id="guestss">
-						<h3>Detalles de tu acompañante <span style="font-size:28px">(si lo hay)</span>:</h3>
-						<%= f.text_field :companion, :placeholder=>"Nombre de tu acompañante*" %>
+						<h3>Detalles de tu acompañante:</h3>
+						<span class='sin_acompañante'>Deja estos campos vacíos si vas sin acompañante</span><br/>
+						<%= f.text_field :companion, :placeholder=>"Nombre de tu acompañante" %>
 						<%= f.text_field :kids, :placeholder=>"Número de niños" %>
 					</fieldset>
 					
