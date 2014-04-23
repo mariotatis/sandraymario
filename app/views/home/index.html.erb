@@ -150,31 +150,32 @@
 				<p>Tu presencia es suficiente...</p>
 				<p>Pero, si sientes una gran generosidad por nosotros, en la recepción habra un baúl esperando por tu sobre.<br>Muchisimas gracias por tu compañía.</p>
 				
+					<h3 class="title_info title_info_fix">Si tienes tu invitación por favor confirmanos tu asistencia</h3>
+					<button class='button_confirm button_confirm_fix'>Confirmar asistencia aquí</button>
 				
-				<div id='confirmar_supo'>
+				<div id='confirmar_cupo'>
 
-					<h3 class="title_info title_info_fix">Por favor, confirmanos sí nos acompañarás en la celebración de nuestra boda?</h3>
+					<div id='form_confirm'>
+						<%= form_for(@reservation, remote: true) do |f| %>
 
-					<%= form_for(@reservation, remote: true) do |f| %>
+						<fieldset>
+							<h3>Tu información personal:</h3>
+							<%= f.text_field :name, :placeholder=>"Nombre Completo*" %>
+							<%= f.text_field :email, :type=> 'email', :placeholder=>"E-mail*" %>
+							<%= f.text_field :phone, :placeholder=>"Teléfono*" %>
+						</fieldset>
 
-					<fieldset>
-						<h3>Tu información personal:</h3>
-						<%= f.text_field :name, :placeholder=>"Nombre Completo*" %>
-						<%= f.text_field :email, :type=> 'email', :placeholder=>"E-mail*" %>
-						<%= f.text_field :phone, :placeholder=>"Teléfono*" %>
-					</fieldset>
+						<fieldset id="guestss">
+							<h3>Detalles de tu acompañante:</h3>
+							<span class='sin_acompañante'>Deja estos campos vacíos si vas sin acompañante</span><br/>
+							<%= f.text_field :companion, :placeholder=>"Nombre de tu acompañante" %>
+							<%= f.text_field :kids, :placeholder=>"Número de niños" %>
+						</fieldset>
 
-					<fieldset id="guestss">
-						<h3>Detalles de tu acompañante:</h3>
-						<span class='sin_acompañante'>Deja estos campos vacíos si vas sin acompañante</span><br/>
-						<%= f.text_field :companion, :placeholder=>"Nombre de tu acompañante" %>
-						<%= f.text_field :kids, :placeholder=>"Número de niños" %>
-					</fieldset>
-					
-					<%= f.button "Confirmar", :id=>'button_submit_form' %>
-					
-					<% end %>
+						<%= f.button "Confirmar", :id=>'button_submit_form' %>
 
+						<% end %>
+					</div>
 				</div>
 	
 

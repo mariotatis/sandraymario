@@ -44,8 +44,13 @@ $(document).ready(function() {
 	// init Save the Date
 	
 	$("#button_submit_form" ).click(function() {
-	   $('#button_submit_form').attr('disabled', true);
-	   $('form').submit();
+		$('#button_submit_form').attr('disabled', true);
+		$('form').submit();
+	});
+
+	$(".button_confirm").click(function() {
+		$('#confirmar_cupo').fadeIn('slow');
+		$('.button_confirm').remove();
 	});
 	
 	document.addEventListener("touchmove", ScrollStart, false);

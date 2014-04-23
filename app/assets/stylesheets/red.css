@@ -250,16 +250,29 @@ h4 {
       left: -5px; }
     .header .images span.him:before {
       -webkit-transform: rotate(-4deg); }
-    .header .images span.him {
-      background-position: top right; }
-  .header .images:hover .him {
-    background-position: bottom right; }
-  .header .images:hover .her {
-    background-position: bottom left; }
-  .header .images:hover .him:hover {
-    background-position: top right; }
-  .header .images:hover .her:hover {
-    background-position: top left; }
+    
+
+	.header .images span.him {
+		background-position: top right;
+	}
+	.header .images .him:hover {
+		background-position: bottom right;
+	}
+
+/*	.header .images:hover .him {
+		background-position: bottom right;
+	}*/
+
+	.header .images .her {
+		background-position: top left;
+	}
+
+
+	.header .images .her:hover {
+		background-position: bottom left;
+	}
+
+
   .header h2 {
     position: relative;
     -webkit-box-sizing: border-box;
@@ -435,7 +448,12 @@ input[type="text"], input[type="email"], textarea {
 textarea {
   height: 150px; }
 
-input[type='submit'], #button_submit_form {
+.button_confirm_fix {
+	position:relative;
+	top:-10px;
+}
+
+input[type='submit'], #button_submit_form, .button_confirm {
   padding: 6px 1em 4px;
   color: white;
   font-family: "BenchNine", "Arial Narrow", sans-serif;
@@ -451,7 +469,7 @@ input[type='submit'], #button_submit_form {
   input[type='submit']:disabled, #button_submit_form:disabled{
     background: #777; }
 
-#guests {
+#guests, #confirmar_cupo {
   display: none; }
 
 #note {
