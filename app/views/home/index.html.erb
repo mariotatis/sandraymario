@@ -158,7 +158,8 @@
 				<div id='confirmar_cupo'>
 
 					<div id='form_confirm'>
-						<%= form_for(@reservation, remote: true) do |f| %>
+						<%= form_for(@reservation, remote: true, authenticity_token: true) do |f| %>
+						<%= hidden_field_tag :authenticity_token, form_authenticity_token %>
 
 						<fieldset>
 							<h3>Tu información personal:</h3>
