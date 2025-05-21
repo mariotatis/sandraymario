@@ -26,7 +26,7 @@ ActiveAdmin.register Reservation do
       column :kids
       column :created_at
       
-      default_actions
+      actions
   end
   
   show do |ad|

@@ -6,11 +6,20 @@ class Reservation < ActiveRecord::Base
 
   after_save :send_email
 
+  # Required for Ransack/ActiveAdmin 3.x compatibility
+  def self.ransackable_attributes(auth_object = nil)
+    ["companion", "created_at", "email", "id", "id_value", "kids", "name", "phone", "updated_at"]
+  end
+
+  def self.ransackable_associations(auth_object = nil)
+    []
+  end
+
   private
 
   def send_email
-    UserMailer.welcome_email(self).deliver
-    UserMailer.new_registration_email(self).deliver
+    UserMailer.welcome_email(self).deliver_now
+    UserMailer.new_registration_email(self).deliver_now
   end
   
 end
