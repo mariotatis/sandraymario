@@ -13,6 +13,7 @@ gem 'puma', '~> 6.4'
 gem 'bootsnap', '~> 1.18', require: false
 gem 'newrelic_rpm', '~> 9.6'
 gem 'mutex_m', '~> 0.2.0'  # Required for zeitwerk compatibility with Ruby 3.4+
+gem 'dotenv-rails', '~> 2.8'  # For managing environment variables
 
 # ActiveAdmin
 gem 'activeadmin', '~> 3.2'
